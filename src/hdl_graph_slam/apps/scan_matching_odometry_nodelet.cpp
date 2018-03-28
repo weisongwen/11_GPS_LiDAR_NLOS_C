@@ -87,7 +87,7 @@ private:
       downsample_filter = passthrough;
     }
 
-    registration = select_registration_method(pnh);
+    registration = select_registration_method(pnh); //choose OMP-NDT
   }
 
   /**
