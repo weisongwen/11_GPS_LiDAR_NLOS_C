@@ -53,7 +53,7 @@ The following ROS packages are required:
 - pcl_ros
 - <a href="https://github.com/koide3/ndt_omp">ndt_omp</a>
 ```bash
-sudo apt-get install ros-indigo-geodesy ros-indigo-pcl_ros ros-indigo-nmea-msgs
+sudo apt-get install ros-jade-geodesy ros-jade-pcl_ros ros-jade-nmea-msgs
 
 cd catkin_ws/src
 git clone https://github.com/koide3/ndt_omp.git
@@ -139,5 +139,5 @@ rosrun hdl_graph_slam bag_player.py dataset-2.bag
 
 
 ## Papers and contact
-The LiDAR Odometry part is adopted from Kenji Koide. Then this package is modified to compatable with sensor fusion of LiDAR and improved GNSS positioning.
+The LiDAR Odometry part is adopted from Kenji Koide. if you are interested in it, you can refer to the initial package. Then this package is modified to compatable with sensor fusion of LiDAR and improved GNSS positioning.
 
