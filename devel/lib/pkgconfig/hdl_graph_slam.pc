@@ -1,0 +1,8 @@
+prefix=/home/wenws/11_GPS_LiDAR_NLOS_C/devel
+
+Name: hdl_graph_slam
+Description: Description of hdl_graph_slam
+Version: 0.0.0
+Cflags: -I/home/wenws/11_GPS_LiDAR_NLOS_C/devel/include -I/home/wenws/11_GPS_LiDAR_NLOS_C/src/hdl_graph_slam/include
+Libs: -L/home/wenws/11_GPS_LiDAR_NLOS_C/devel/lib 
+Requires: 

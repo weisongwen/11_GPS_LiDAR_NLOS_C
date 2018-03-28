@@ -1,0 +1,2 @@
+hdl_graph_slam:ndt_omp
+-DCATKIN_DEVEL_PREFIX=/home/wenws/11_GPS_LiDAR_NLOS_C/devel -DCMAKE_INSTALL_PREFIX=/home/wenws/11_GPS_LiDAR_NLOS_C/install -G Unix Makefiles

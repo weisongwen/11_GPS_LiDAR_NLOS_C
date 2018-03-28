@@ -1,0 +1,8 @@
+prefix=/home/wenws/11_GPS_LiDAR_NLOS_C/install
+
+Name: ndt_omp
+Description: Description of ndt_omp
+Version: 0.0.0
+Cflags: -I/home/wenws/11_GPS_LiDAR_NLOS_C/install/include
+Libs: -L/home/wenws/11_GPS_LiDAR_NLOS_C/install/lib -lndt_omp
+Requires: 

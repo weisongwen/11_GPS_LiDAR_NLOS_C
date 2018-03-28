@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2706120846/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2706120846.dir/build.make CMakeFiles/cmTryCompileExec2706120846.dir/build
+make[1]: Entering directory `/home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2706120846.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2706120846.dir/CheckSymbolExists.c.o   -c /home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2706120846
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2706120846.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2706120846.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2706120846 -rdynamic 
+CMakeFiles/cmTryCompileExec2706120846.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2706120846] Error 1
+make[1]: Leaving directory `/home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2706120846/fast] Error 2
+
+File /home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec935677754/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec935677754.dir/build.make CMakeFiles/cmTryCompileExec935677754.dir/build
+make[1]: Entering directory `/home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec935677754.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec935677754.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec935677754
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec935677754.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec935677754.dir/CheckFunctionExists.c.o  -o cmTryCompileExec935677754 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec935677754] Error 1
+make[1]: Leaving directory `/home/wenws/11_GPS_LiDAR_NLOS_C/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec935677754/fast] Error 2
+
+
