@@ -1,9 +1,9 @@
 # hdl_graph_slam
 ***hdl_graph_slam*** is an open source ROS package for real-time 3D slam using a 3D LIDAR. It is based on 3D Graph SLAM with NDT scan matching-based odometry estimation and loop detection. It also utilizes floor plane detection to generate an environmental map with a completely flat floor. We have tested this packaged mainly in indoor environments, but it can be applied to outdoor environment mapping as well.
 
-<img src="imgs/hdl_graph_slam.png" width="712pix" />
+<img src="imgs/NiuTouJiao.png" width="712pix" />
 
-<a href="https://drive.google.com/open?id=0B9f5zFkpn4soSG96Tkt4SFFTbms">video</a>
+<a href="https://www.youtube.com/watch?v=dO02cCeoA6s">video</a>
 
 ## Nodelets
 ***hdl_graph_slam*** consists of four nodelets. 
@@ -137,13 +137,6 @@ rosrun hdl_graph_slam bag_player.py dataset-2.bag
 
 <img src="imgs/ford1.png" height="200pix"/> <img src="imgs/ford2.png" height="200pix"/> <img src="imgs/ford3.png" height="200pix"/>
 
-## Related packages
-
-- <a href="https://github.com/koide3/hdl_graph_slam">hdl_graph_slam</a>
-- <a href="https://github.com/koide3/hdl_localization">hdl_localization</a>
-- <a href="https://github.com/koide3/hdl_people_tracking">hdl_people_tracking</a>
-
-<img src="imgs/packages.png"/>
 
 ## Papers and contact
 The LiDAR Odometry part is adopted from Kenji Koide. Then this package is modified to compatable with sensor fusion of LiDAR and improved GNSS positioning.
