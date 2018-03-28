@@ -145,10 +145,6 @@ rosrun hdl_graph_slam bag_player.py dataset-2.bag
 
 <img src="imgs/packages.png"/>
 
-## Papers
-Kenji Koide, Jun Miura, and Emanuele Menegatti, A Portable 3D LIDAR-based System for Long-term and Wide-area People Behavior Measurement, IEEE Transactions on Human-Machine Systems (under review) [PDF].
-
-## Contact
-Kenji Koide, Active Intelligent Systems Laboratory, Toyohashi University of Technology <a href="http://www.aisl.cs.tut.ac.jp">[URL]</a> <br>
-koide@aisl.cs.tut.ac.jp
+## Papers and contact
+The LiDAR Odometry part is adopted from Kenji Koide. Then this package is modified to compatable with sensor fusion of LiDAR and improved GNSS positioning.
 
